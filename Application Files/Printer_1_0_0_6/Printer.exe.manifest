@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Printer.exe" version="1.0.0.6" publicKeyToken="a1da6c2bd83f68c4" language="pt-BR" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="iconprinter.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Printer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Printer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opções de Manifesto UAC
+ Se você deseja alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó requestedExecutionLevel 
+ por um dos seguintes.
+
+<requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+ Especificar o elemento requestedExecutionLevel desabilitará a virtualização de arquivos e Registro. 
+ Remova esse elemento se seu aplicativo requer essa virtualização para compatibilidade
+            com versões anteriores.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Printer.exe" size="46064">
+      <assemblyIdentity name="Printer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u+BISOR4ds/d34r3sM6jgw65OFVJuxBGqc6L/4Aslas=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="iconprinter.ico" size="703">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CnOik78sTYyq1lMDDniMBHHo//Ig8JPF6y295wHm2GU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Printer.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Remote Tools for Microsoft Edge.ico" size="50708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tNW5DOumaf07eHdud46QAreFvKM3JJVThaOz9Jue99I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Uma lista das versões do Windows nas quais este aplicativo foi testado e
+           com as quais ele foi projetado para trabalhar. Remova a marca de comentário dos elementos apropriados
+           e o Windows selecionará automaticamente o ambiente mais compatível. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=GRUPO-CONCEITO-\USER-PC" issuerKeyHash="cfc0be024e6e96baca913fe26585696c90acf249" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>t+zkyK4FxrLDIQKjTAQusz0iZ+KdndAY4k6kkIbDygI=</DigestValue></Reference></SignedInfo><SignatureValue>rqwwk3/e2QTf8yO9d6KQofoERXxuJRNQi8i3Pw3PT4YFPORQakbYQHRy75DUkDOc6NDBvb4M/3OQEL/ptuBfbje0tzFdsK5WDprzrgO0A0tpvUA169NLS+NJZU7uk3V4+npPhdRfFqNjQCgIXdyMgmXqHAdnNMbS6bicgzHmnKk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vjHzEUrR8Qw0rpiCmNljErMe6ad6GTvY9SYKqakaLmtWHhxNgwXNmG81rIinTBXVXAFkX0/huUa2IVGmEKml+azh9fjVaKeJj137zVhBoP8+udER5+DmFoPqt5fv+1dQS6zJ9tH7v0vGptRk48FSXzI76ej+FheaKuIhsv4NPzE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="02cac38690a44ee218d09d9de267223db32e044ca30221c3b2c605aec8e4ecb7" Description="" Url=""><as:assemblyIdentity name="Printer.exe" version="1.0.0.6" publicKeyToken="a1da6c2bd83f68c4" language="pt-BR" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GRUPO-CONCEITO-\USER-PC</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MnE1USdtUbbwf9PRRoylnc4yITd2UnYWbDqN5Clb5uc=</DigestValue></Reference></SignedInfo><SignatureValue>iwt5tUOfU+9ElODp64zSyvZHwYLvbKbfEWRU3oH2bZSitXoMb/g2xJL+x8svTVF7zWjv5ZkKNOT3DnYZ2DGNn3DjrwQhZB7yaPmC/XJfJrZ56yGWJuq6RNi4MTehmP8MsaBlGhVi/uh8jtC7jWVJJxnfp1M9cpHwIlmJgMu/Mm4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vjHzEUrR8Qw0rpiCmNljErMe6ad6GTvY9SYKqakaLmtWHhxNgwXNmG81rIinTBXVXAFkX0/huUa2IVGmEKml+azh9fjVaKeJj137zVhBoP8+udER5+DmFoPqt5fv+1dQS6zJ9tH7v0vGptRk48FSXzI76ej+FheaKuIhsv4NPzE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQHRQ1bjq6uYhNRCep3LAoZzANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARwBSAFUAUABPAC0AQwBPAE4AQwBFAEkAVABPAC0AXABVAFMARQBSAC0AUABDMB4XDTI1MDEyMjE4NDYwMVoXDTI2MDEyMzAwNDYwMVowOTE3MDUGA1UEAx4uAEcAUgBVAFAATwAtAEMATwBOAEMARQBJAFQATwAtAFwAVQBTAEUAUgAtAFAAQzCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvjHzEUrR8Qw0rpiCmNljErMe6ad6GTvY9SYKqakaLmtWHhxNgwXNmG81rIinTBXVXAFkX0/huUa2IVGmEKml+azh9fjVaKeJj137zVhBoP8+udER5+DmFoPqt5fv+1dQS6zJ9tH7v0vGptRk48FSXzI76ej+FheaKuIhsv4NPzECAwEAATANBgkqhkiG9w0BAQsFAAOBgQBOCiSVTdUxGyQ86FAA1A8b4jUgvM3vlmUtzd2B9YZnRSE3+XDgYLbAsz/k32ZB7jGHeCe1kO7cjwflKFwYhtMxyYyD5eIXWwu03Li8Apgdm4gL82aVoceYiMxHv/iGFbUeuUvDZkAVQMWvB1Q9gL/WDi3zVvuVn705Jr5yRQWMVw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
